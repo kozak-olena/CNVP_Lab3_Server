@@ -1,0 +1,8 @@
+CNVP_Lab3_Server/DataToSend.java
+ CNVP_Lab3_Server.DataToSend
+CNVP_Lab3_Server/OperationDispatch.java
+ CNVP_Lab3_Server.OperationDispatch
+CNVP_Lab3_Server/Main.java
+ CNVP_Lab3_Server.Main
+CNVP_Lab3_Server/JsonParser.java
+ CNVP_Lab3_Server.JsonParser
