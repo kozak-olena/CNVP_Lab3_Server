@@ -10,7 +10,7 @@ public class Server {
 
     public Server() throws SocketException {
         socket = new DatagramSocket(5548);
-        System.out.println("socket os running");
+        System.out.println("socket is running");
     }
 
     public void run(boolean status) {
@@ -28,7 +28,7 @@ public class Server {
             exception.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {                    //????????????
+        } finally {
             socket.close();
         }
     }

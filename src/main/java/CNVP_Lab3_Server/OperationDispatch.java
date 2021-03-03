@@ -3,7 +3,6 @@ package CNVP_Lab3_Server;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -34,11 +33,12 @@ public class OperationDispatch {
         return DataToSend.convertJsonToBytes(currentTime);
     }
 
+    public static LocalTime getLocalTime() {
+        return LocalTime.now();
+    }
 
     public static byte[] getSurnames() throws JsonProcessingException {
         String dataToSend = String.join(" ", "ПОЛІЩУК", "ШЕВЧУК", "ПОПОВА", "ХАЧАТУРЯН", "СЕРДЮК");
         return DataToSend.convertJsonToBytes(dataToSend);
     }
-
-
 }
